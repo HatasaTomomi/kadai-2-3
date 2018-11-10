@@ -81,3 +81,36 @@ for n in 1..3 do
    p 'それ以外です'
   end
 end
+#kadai -04
+#1
+class People
+end
+#2
+class People
+  def initialize
+    p "Peopleのインスタンスが作られました"
+  end
+end
+#3
+class People
+  def self.coment
+    p "私はPeopleクラスです"
+  end
+end
+#4
+class People
+  def name = (value)
+    @name = value
+  end
+  people.name = "ひと"
+  def name
+    @name
+  end
+  people.name
+
+class People
+  attr_accessor : name
+end
+people = People.new
+people.name = "ひと"
+p people.name
