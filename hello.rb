@@ -102,15 +102,36 @@ class People
   def name = (value)
     @name = value
   end
-  people.name = "ひと"
+  people.name = "human"
   def name
     @name
   end
   people.name
 
 class People
-  attr_accessor : name
+  attr_accessor :name
 end
 people = People.new
-people.name = "ひと"
+people.name = "human"
 p people.name
+
+class People
+  def self.comment
+    p "私はPeopleクラスです"
+  end
+end
+class SuperPeople < People
+end
+SuperPeople.comment
+
+class People
+  def self.comment
+    p "私はPeopleクラスです"
+  end
+end
+class SuperPeople < People
+  def self.beam
+    p "私は目からビームが出せます"
+  end
+end
+SuperPeople.beam
